@@ -10,7 +10,7 @@ buildscript {
             }
             credentials {
                 username = "mapbox"
-                password = project.hasProperty('MAPBOX_DOWNLOADS_TOKEN') ? project.property('MAPBOX_DOWNLOADS_TOKEN') : System.getenv('MAPBOX_DOWNLOADS_TOKEN')
+                password = project.hasProperty('pk.eyJ1IjoiZGFtbzEyMyIsImEiOiJjbHpzdHJtMHMwcnlvMmlzOTA3MjhheXJxIn0.GVAI4flEe7QIIUFy0OneAw') ? project.property('MAPBOX_DOWNLOADS_TOKEN') : System.getenv('MAPBOX_DOWNLOADS_TOKEN')
                 if (password == null || password == "") {
                     throw new GradleException("MAPBOX_DOWNLOADS_TOKEN isn't set. Set it to the project properties or to the enviroment variables.")
                 }
